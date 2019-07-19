@@ -8,7 +8,7 @@ public class test1 {
 	public static void main(String[] args) throws Exception {
 		System.setProperty("webdriver.chrome.driver","D:\\Chrome\\chromedriver.exe");
 		ChromeDriver driver=new ChromeDriver();
-		driver.get("http://localhost/jenkins/php1/index.php");
+		driver.get("http://192.168.1.161:8181/php1/index.php");
 		
 		driver.findElement(By.xpath("/html/body/form/table/tbody/tr[1]/td[2]/input")).sendKeys("ASD");
 		driver.findElement(By.xpath("/html/body/form/table/tbody/tr[2]/td[2]/input")).sendKeys("rohit");
